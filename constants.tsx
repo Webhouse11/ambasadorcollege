@@ -109,7 +109,7 @@ export const NEWS: NewsItem[] = [
   {
     id: 1,
     title: 'Ambassadors College Wins National Science Olympiad',
-    date: 'Oct 12, 2024',
+    date: 'February 5, 2024',
     category: 'Achievement',
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop',
     excerpt: 'Our students showcased exceptional analytical skills at the National Science Competition, clinching the first position.'
@@ -117,7 +117,7 @@ export const NEWS: NewsItem[] = [
   {
     id: 2,
     title: 'New Digital Learning Center Commissioned',
-    date: 'Sep 05, 2024',
+    date: 'February 5, 2024',
     category: 'Facility',
     image: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=800&auto=format&fit=crop',
     excerpt: 'We are proud to announce the opening of our state-of-the-art laboratory for advanced digital literacy.'
@@ -125,7 +125,7 @@ export const NEWS: NewsItem[] = [
   {
     id: 3,
     title: 'Admission 2024/2025 Now Open',
-    date: 'Aug 20, 2024',
+    date: 'February 5, 2024',
     category: 'Admission',
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop',
     excerpt: 'Join the college of champions. Applications are now being accepted for all classes.'
