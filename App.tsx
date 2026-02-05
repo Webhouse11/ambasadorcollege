@@ -1,5 +1,6 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
+import * as React from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { 
   Menu, X, ChevronRight, MapPin, Phone, Mail, 
   Facebook, Twitter, Instagram, Linkedin, 
@@ -10,6 +11,7 @@ import {
 import { NAV_LINKS, STATS, PROGRAMS, NEWS, FACULTY, SLIDES, TESTIMONIALS, GALLERY_IMAGES } from './constants';
 
 const SCHOOL_BUILDING_IMAGE = "https://lh3.googleusercontent.com/d/1w7Mz7CoAGVH2O3ud1_KMu2nR7HRXfVdW";
+const SCHOOL_LOGO = "https://lh3.googleusercontent.com/d/1qH4Y37i7fymMCdWHItis_Wjb3aDEAdvj";
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,11 +65,11 @@ const App: React.FC = () => {
       </div>
 
       {/* Header */}
-      <header className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white shadow-xl py-3 top-0' : 'bg-transparent py-6 lg:top-8 top-0'}`}>
+      <header className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white shadow-xl py-2 top-0' : 'bg-transparent py-6 lg:top-8 top-0'}`}>
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-          <div className="flex items-center gap-3 group cursor-pointer" onClick={() => scrollToSection('#home')}>
-            <div className="w-12 h-12 bg-brand-navy flex items-center justify-center rounded-xl shadow-lg transition-transform group-hover:scale-105">
-              <span className="text-brand-gold font-serif text-3xl font-black">A</span>
+          <div className="flex items-center gap-4 group cursor-pointer" onClick={() => scrollToSection('#home')}>
+            <div className="w-14 h-14 flex items-center justify-center transition-transform group-hover:scale-105">
+              <img src={SCHOOL_LOGO} alt="Ambassadors College Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <h1 className={`font-serif text-xl font-black tracking-tighter leading-none transition-colors duration-500 ${isScrolled ? 'text-brand-navy' : 'text-white'}`}>AMBASSADORS</h1>
@@ -102,8 +104,8 @@ const App: React.FC = () => {
         <div className={`lg:hidden fixed inset-0 bg-brand-navyDark z-40 transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="flex flex-col items-center justify-center h-full gap-8 relative px-4 text-center">
             <X className="absolute top-8 right-8 text-white cursor-pointer" size={32} onClick={() => setIsMenuOpen(false)} />
-            <div className="w-20 h-20 bg-white flex items-center justify-center rounded-2xl mb-4">
-              <span className="text-brand-navy font-serif text-4xl font-black">A</span>
+            <div className="w-24 h-24 flex items-center justify-center mb-4">
+              <img src={SCHOOL_LOGO} alt="Ambassadors College Logo" className="w-full h-full object-contain" />
             </div>
             {NAV_LINKS.map((link) => (
               <button 
@@ -505,8 +507,8 @@ const App: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-16 mb-24">
             <div className="lg:col-span-5">
               <div className="flex items-center gap-4 mb-10">
-                <div className="w-16 h-16 bg-white flex items-center justify-center rounded-2xl shadow-xl">
-                  <span className="text-brand-navy font-serif text-4xl font-black">A</span>
+                <div className="w-20 h-20 flex items-center justify-center">
+                  <img src={SCHOOL_LOGO} alt="Ambassadors College Logo" className="w-full h-full object-contain" />
                 </div>
                 <div>
                   <h1 className="font-serif text-3xl font-black tracking-tighter leading-none">AMBASSADORS</h1>
